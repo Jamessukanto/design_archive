@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>James Sukanto Design Archive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background-image: url('images/vrperi1.jpg');
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 60vh;
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="inner">
+					<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
+				</div>
+			</header>
+			
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Works</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="inner">
+					<h1>VR Prototype: Peripersonal Space</h1>
+					<h2>Challenge</h2>
+					<p>
+						How might our sense of the space, which immediately surrounds us, change as we interact in the virtual world?
+					</p>
+					<h2>Solution</h2>
+					<p>
+						A VR experience that measures the expanse (or shrinkage) of our peripersonal space. The prototype is an HTC VIVE interpretation of a paper titled "The sense of agency shapes body schema and peripersonal space" (D' Angelo et al, 2018). I prototyped using Unity and diverged from the paper by including a 'slash the asteroids' mini game.
+					</p> 
+					<span class="video main" style="display: flex; justify-content: center; align-items: center; width: 80vw; height: calc(40vw * 9 / 8);">
+						<iframe 
+						src="https://youtu.be/yw-AC7vJ9iY?si=o2uZdj5YluLSVFDQ" 
+						style="width: 100%; height: 100%;" 
+						frameborder="0" 
+						allow="autoplay; encrypted-media" 
+						allowfullscreen>
+						</iframe>
+					</span>
+					<br><br>
+					<h2>Task 0: Have user get used to using their virtual hands</h2>
+					<p>
+						We onboard the participant and have them get used to interacting with their virtual hands. As is in typical VR simulations, the distance between their virtual hands and 'themselves in the virtual world' corresponds directly with the distance between their actual hands and 'themselves in the actual world'.
+					</p>
+					<span class="image main"><img src="images/vrperi2.png" alt="" /></span>
+
+					<h2>Task 1: Get user to assess their reaching distance</h2>
+					<p>
+						In this current scene, the participant can only rely on their voice to interact and we deliberately do not render their virtual hands. The task is to have the participant to evaluate their own reaching distance.
+						<br><br>As a ball floats closer to the participant, they are instructed to say "Stop" when they think the ball is just within their reaching distance. I used the Unity Phrase Recognition and specified command keywords such as "Closer" and "Further" to help the participant fine-tune the measurement.
+					</p>
+				</div>
+
+				<span class="image main"><img src="images/vrperi3.jpg" alt="" /></span>
+				
+				<div class="inner">
+					<h2>Task 2: Play the 'slash the asteroids' mini game</h2>
+					<p>
+						The original experiment described in the paper does not translate nicely to VIVE controllers. On the upside, VIVE controllers are excellent for some serious asteroids slicing. In this scene, we now render the participant's virtual hands again, and have them use a light saber to slash away incoming asteroids for over a minute.
+						<br><br>One caveat is, without informing the participant, the virtual hands are placed a meter further from the virtual body of the participant. 
+					</p>
+					<span class="image main" style="display: flex; justify-content: center;"><img src="images/vrperi4.jpeg" alt="" style="width: 60%;" /></span>
+					<br><br>
+				</div>
+				<span class="image main"><img src="images/vrperi5.jpg" alt="" /></span>
+
+				<div class="inner">
+					<h2>Task 3: Get user to assess their reaching distance again</h2>
+					<p>
+						Repeat Task 1.
+					</p>
+
+					<h2> User testing</h2>
+					<p>
+						Findings from early iterations showed a lack of user engagement as the game was too easy. With the asteroids destination fixed to the user camera, players did not need to move their body around to evade incoming asteroids and could mindlessly swat their saber.
+						<br><br>On the other hand, we need the participant to be engaged with the game to distract them from realizing that their virtual hands are rendered a meter further than usual. As a fix, I fine-tuned the default asteroid targets to randomized points with a meter radius from the user camera. I also introduced a score system to reward the participant immediately after slicing an asteroid.
+					</p>
+
+					<h2> Retrospection</h2>
+					<p>
+						Three out of five user tests suggested a slight increase in the reaching distance after having their virtual hand presented further in space than their real hand, implying that their peripersonal spaces expanded! Obviously, this is far from being conclusive with a low count of participants. I hypothesized the lack of fine motor activities using the Vive controllers as the cause of the weak evidence.
+						<br><br>Back in the Menu scene, the scores (before and after mini game) are displayed. Moving forward, I  hope to include more modules to be built as control groups in future developments.
+					</p>
+				</div>
+				<span class="image main"><img src="images/vrperi5.jpg" alt="" /></span>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>James Sukanto Design Archive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background-image: url('images/vrclick1.png');
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 60vh;
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="inner">
+					<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
+				</div>
+			</header>
+			
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Works</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="inner">
+					<h1>VR Prototype: Echolocation</h1>
+					<h2>Challenge</h2>
+					<p>
+						Player avatars are often human or anthropomorphized characters, which limits the game narrative and user interactions and gestures conceived. How might we design a game narrative and user interaction which better immerses the player in the virtual world?
+					</p>
+					<h2>Solution</h2>
+					<p>
+						A VR experience in which the player is a dolphin trying to echo-locate an elusive octopus for pre-lunch snack. As the water visibility is poor, the player can invoke echolocation by fixing their gaze and uttering the word "Click!" to see faraway objects.
+						<br><br>I prototyped the interactions using Unity for Google Cardboard and used Watson speech-to-text and assistant services for the user voice input implementation. Also, I conducted a usability testing session with a colleague. 
+					</p>
+					<h2>1. Ideation Phase</h2>
+					<p>
+						To generate ideas for novel game narratives and user interactions, I began by identifying activities which could make interesting user interactions in VR and classifying them according to:
+					</p>
+					<ul>
+						<li>Activities humans might perform: bird-watching through binoculars, cow-milking, tabla-playing</li>
+						<li>Activities non-humans might perform: bacterium dividing itself, a puffer-fish inflating, mythological Hydra losing and growing new heads</li>
+					</ul>
+					<p>
+						I settled with dolphin avatar and echolocation as it offers an interesting way to learn about the animal. 
+					</p>
+					<h2>2. Design & development </h2>
+					<p>
+						2.1  Way-points navigation		
+						<br>For navigation within scene, I employed the standard gaze-and-click to eliminate motion sickness. This is crucial as, whilst diving in the open water, it is easy for humans to lose their sense of space. As a preemptive measure, I added many more non-moving underwater objects such as sea weed, corals, and boulders serving as visual anchors for the player.			
+					</p>
+				</div>
+				<span class="image main"><img src="images/vrclick2.png" alt="" /></span>
+				<div class="inner">	
+					<p>
+						2.2  Voice interface
+						<br>I experimented with the cloud-based Watson speech-to-text service which registers 'intents'. When a player utters the word "Click!", in-game water visibility improves temporarily.
+						<br><br>To improve the service response time, I lowered the minimal keyword confidence level and reduce the waiting time following the the utterance of "Click!". Other keywords which rhyme with "Click!" such as "Lick" and "Flick" were also selected for a more forgiving interface.
+					</p>
+				</div>
+				<span class="video main" style="display: flex; justify-content: center; align-items: center; width: 80vw; height: calc(40vw * 9 / 8);">
+					<iframe 
+						src="https://youtu.be/FAHVaNUs1Ag?si=cUb4bzgPFeM47CrR" 
+						style="width: 100%; height: 100%;" 
+						frameborder="0" 
+						allow="autoplay; encrypted-media" 
+						allowfullscreen>
+					</iframe>
+				</span>
+				<div class="inner">	
+					<h2><br><br>3.  Evaluation Phase</h2>
+					<p>
+						I conducted a usability study with a colleague already familiar with way-points navigation in VR and read him the following task:
+						<br>"You're a dolphin with the ability to echo-locate in murky waters. Find yourself an octopus for a snack and please share your questions or thoughts you may have as you complete the task."
+					</p>
+					<ul>
+						<li>"Oh the sonar lines' neat."</li>
+						<li>It's crucial to strike a balance in difficulty when designing games — the task, i.e. the number of objects to check, shouldn't be so easy that it feels mindless, nor so hard that the player feels frustrated and gives up."</li>
+						<li>'Is something supposed to happen?' as the user said 'Click!' but experienced delayed feedback. <br> Using Watson Speech-to-Text and Assistant triggered two separate service calls, putting extra strain on an already slow network. In hindsight, relying on the service overcomplicated things — I should have just hardcoded a simple verbal keyword recognizer instead.</li>
+					</ul>
+				</div>
+				<span class="image main"><img src="images/vrclick3.jpg" alt="" /></span>
+				<span class="image main"><img src="images/vrclick4.jpg" alt="" /></span>
+				<div class="inner">
+					<p>
+						3.2  Retrospection and future exploration 
+						<br>Creating the prototype and the usability study led to more ideas I'm excited about and learnings:
+					</p>
+					<ul>
+						<li>Unity has its own Phrase Recognition, which recognizes specified keywords with a much faster response time. 
+							<br> (Just what I need for the simple game!) </li>
+						<li>Map displaying areas already explored</li>
+						<li>Reduce the amplitude of the sonar rings to correspond with nearer objects.</li>
+						<li>Variations of "Click" utterances such as burst-mode and sensitivity to user's pitch.</li>
+						<li>Have the player avoid sharks by echo-locating stealthily.</li>
+					</ul>
+				</div>
+				<span class="image main"><img src="images/vrclick5.jpg" alt="" /></span>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

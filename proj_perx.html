@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>James Sukanto Design Archive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background-image: url('images/perx1.png');
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 60vh;
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="inner">
+					<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
+				</div>
+			</header>
+			
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Works</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="inner">
+					<h1>Redesigning Perx Platform</h1>
+					<h2>Challenge</h2>
+					<p>Perx was built to help users create marketing campaigns easily. But in reality, most users only launched one campaign per year—and still leaned heavily on our Customer Success team for help, even after onboarding. Something wasn’t clicking.</p>
+					<h2>Solution and my Role</h2>
+					<p>
+						We gave the platform a major UX overhaul to guide users more clearly through campaign creation. I teamed up with fellow designer to rethink the entire experience—from the ground up. My contributions:
+					</p>	
+					<ul>
+						<li>Ran interviews with users and internal teams to spot key pain points</li>
+						<li>Created wireframes, user flows, and interactive prototypes</li>
+						<li>Led usability testing to validate and refine our designs</li>
+					</ul>
+					
+					<h2>1. Research Phase</h2>
+					<p>
+						1.1  Competitive Analysis <br>
+						To better understand the problem space, I looked into the market to identify conventions and gaps amongst existing products. I conducted a competitive analysis with Facebook Ads Manager, Google Ads, and Mailchimp, and concluded:
+					</p>	
+					<ul>
+						<li>New users are often exploring, while existing users are operating</li>
+						<li>Overwhelmed users bookmark campaigns or drafts "to finish later" and then never return</li>
+					</ul>
+					<p>1.2  Interviews & Affinity Mapping</p>
+					<span class="image main"><img src="images/perx3.png"/></span>
+					<p>
+						I conducted 4 out of the 8 interviews. Interviewees are of executive and managerial level with little to a wealth of experience in using marketing and ads creation software. I synthesized our results and gained the following insights:
+					</p>
+					<ul>
+						<li>Content assets creation, while a part of campaign creation process, is a separate stream: content assets are managed by the in-house design team and may not be ready when a marketer finalizes the campaign mechanic.</li>
+						<li>6 out of 8 start the process of campaign creation with a campaign goal in mind</li>
+						<li>8 out of 8 think of setting up the campaign audience before setting up the campaign mechanic</li>
+						<li>8 out of 8 think of setting up the campaign channels as a final step</li>
+					</ul>
+				</div>
+				<span class="image main" style="display: block; width: 100%;">
+					<img src="images/perx4.png" style="width: 100%; height: auto;" />
+				</span>
+				<div class="inner">	
+					<p>1.3  Review & usability test on existing design<br>
+						Along with the interviews, we also invited the participants to interact with the existing platform design and raise their pain points.
+					</p>
+					<ul>
+						<li>"Serious standardization issues with regards to field labels across campaign types"  - Mei</li>
+						<li>"Didn't occur to me that leaving the audience field blank means that we're targeting everyone"  - Mark</li>
+						<li>"It's not clear where the terms and conditions I've entered will be displayed."  - Ravin</li>
+						<li>"Is selling period the validity period?"  - Christine</li>
+					</ul>
+					
+					<h2>2 Design Phase</h2>
+					<p>2.1  Where should we focus the redesign?
+						<br>From our findings, we learned that platform suffers from severe standardization issues across the eight different campaign types. Solving for one campaign type implies solving for seven others. In order to maximize impact of our efforts, we focused on redesigning the campaign creation flow and address standardization issues head on.
+						<br><br>2.2  New task flow
+						<br>Given that content assets creation and campaign mechanic setting up activities occur in parallel, we break down the existing 'Mechanic' step into 'Mechanic setup' and 'Content & Display setup' steps. Another benefit of doing so is we can now confine multi language customization to only 'Content & Display setup' (in existing design, multi-language options apply to all steps unnecessarily).
+					</p>
+					<span class="image main"><img src="images/perx5.png"/></span>
+					<p>
+						We found that the existing platform design demands user inputs without regard to product familiarity levels and immediate user needs. We then considered primary user scenarios to arrive at good defaults for input fields, and what should happen when there is none. Furthermore, we also prioritized which input fields to display based on their usage frequency of usage and hide optional input fields in 'advanced options'.
+					</p>
+					<span class="image main"><img src="images/perx6.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						2.4  Disambiguate and standardize concepts
+						<br>Design reviews and tests of the existing design showed users are often confused with the concepts presented because:
+					</p>
+					<ul>
+						<li>Presentation of concepts ignores user perspective: the phrase 'tenant account' makes sense to Perx but need a shift in perspective for our users. Another complication is concepts like 'user' in the current platform design could mean the marketer or even the end-customer.</li>
+						<li>Ambiguity: concepts like 'reward validity' might refer to the selling period of the reward, or the period a customer can redeem the reward once they buy and receive it in their 'wallet'.</li>
+					</ul>
+					<span class="image main"><img src="images/perx7.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"/></span>
+					<p>
+						2.5  Information architecture
+						<br>I initiated an open card sorting exercise to better understand users' expectation of topics / concepts and identify recurring patterns in categorizing concepts. The exercise, however, involved only one participant as it had to be de-prioritized to address more pressing issues at the time. 
+					</p>
+				</div>
+				<span class="image main" style="display: block; width: 100%;">
+					<img src="images/perx8.png" style="width: 100%; height: auto;" />
+				</span>
+				<div class="inner">	
+					<p>2.6  Prototypes</p>
+				</div>
+				<span class="image main"><img src="images/perx9.png"/></span>
+				<div class="inner">	
+					<p>	
+						3.  Iterations & usability testings
+						<br>I identified design risks in the prototypes and moderated 12 usability testings sessions with internal stakeholders and our existing clients to evaluate risk severity and probability. During the sessions, I focused on the findability and clarity of concepts, and user understanding of tasks sequence.
+						Our takeaways from the usability testings include:
+					</p>
+					<ul>
+						<li>Users relieved from having to provide many inputs at once. (Our design iterations progressively requests user inputs)</li>
+						<li>New design is "visually attractive and minimal"</li>
+						<li>Users were not sure why there needs a 'validity period' when there already is a 'publish period'</li>
+						<li>Several users were very confused by the two available methods of uploading images.</li>
+					</ul>
+				</div>
+				<span class="image main"><img src="images/perx10.png"/></span>
+				<div class="inner">	
+					<h2>4.  High fidelity designs</h2>
+				</div>
+				<span class="image main"><img src="images/perx11.png"/></span>
+				<div class="inner">	
+					<h2>5.  Results and learnings</h2>
+					<p>
+						The prototype received strong positive feedback from clients and the customer success team — 8 out of 12 participants found the new flow and concepts more intuitive and aligned with their expectations. However, to minimize disruption to existing users and account for developer capacity, we rolled out the redesign in smaller, manageable phases.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -99,7 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #131313;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -155,7 +156,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 900;
+		font-weight: 500;
 	}
 
 	em, i {
@@ -163,15 +164,22 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		font-size: 1.18em;
+		margin: 1em 0 1.5em 0;
+		letter-spacing: 0.025em;
+		color:#a5a5a5;
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 3em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
+		margin: 2em 0 1em 0;
+
 		letter-spacing: -0.035em;
+		/* font-family: 'Courier New', Courier, monospace;  */
+		/* font-family: Miller, serif;  */
+		color:#e8e8e8;
 	}
 
 		h1 a {
@@ -182,7 +190,8 @@ input, select, textarea {
 
 			h1 {
 				font-size: 2em;
-				margin: 0 0 1em 0;
+				/* margin: 0 0 1em 0; */
+				
 			}
 
 		}
@@ -191,16 +200,19 @@ input, select, textarea {
 
 			h1 {
 				font-size: 1.75em;
+				
+
 			}
 
 		}
 
 	h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		font-weight: 720;
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.3em;
+		color:#bbbbbb;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -208,7 +220,8 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
+		margin: 4em 0 1em 0;
+		font-size: 1em;
 	}
 
 	h3 {
@@ -1783,12 +1796,20 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: top;
+		/* text-align: center; */
 	}
 
 	header p {
-		margin-top: -1em;
+		/* margin-top: 2em; */
+		margin-top: -2em;
 	}
+	
+	.subheadline {
+		margin-top: 6em;
+
+	}
+
 
 	@media screen and (max-width: 736px) {
 
@@ -1868,7 +1889,7 @@ input, select, textarea {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
+		margin: 0 0 1.5em 0;
 		padding-left: 1.25em;
 	}
 
@@ -1878,12 +1899,13 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 3em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			color:#bbbbbb;
 		}
 
 		ul.alt {
@@ -2175,7 +2197,7 @@ input, select, textarea {
 		}
 
 	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23c9c9c9' /%3E%3C/svg%3E");
+		/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23c9c9c9' /%3E%3C/svg%3E"); */
 		background-size: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: calc(100% - 1rem) center;
@@ -2295,7 +2317,6 @@ input, select, textarea {
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
-
 		.box > :last-child,
 		.box > :last-child > :last-child,
 		.box > :last-child > :last-child > :last-child {
@@ -2573,7 +2594,8 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		position: relative;
-		margin: -2.5em 0 0 -2.5em;
+		margin: 0; /* No weird negative margins */
+		gap: 4em; /* Control the gap between columns easily */
 	}
 
 		.tiles article {
@@ -2582,11 +2604,10 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(50% - 2.5em);
-			/* width: calc(33.33333% - 2.5em); */
-			margin: 2.5em 0 0 2.5em;
+			flex: 0 0 calc(50% - 2em);
 		}
 
+		
 			.tiles article > .image {
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
@@ -2595,7 +2616,7 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: 4px;
+				border-radius: 32px;
 				overflow: hidden;
 			}
 
@@ -2611,7 +2632,8 @@ input, select, textarea {
 					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
 					transition: background-color 0.5s ease, opacity 0.5s ease;
 					content: '';
-					display: block;
+					display: none;
+					/* display: block; */
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -2635,7 +2657,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E"); */
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2644,10 +2666,11 @@ input, select, textarea {
 				}
 
 			.tiles article > a {
-				display: -moz-flex;
+				/* display: -moz-flex;
 				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
+				display: -ms-flex; */
+				/* display: flex; */
+				display: none;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2731,10 +2754,10 @@ input, select, textarea {
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
-				-moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);
+				-moz-transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				transform: scale(1.05);
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
@@ -2884,6 +2907,7 @@ input, select, textarea {
 				#header nav ul li {
 					display: block;
 					padding: 0;
+					
 				}
 
 					#header nav ul li a {
@@ -2892,7 +2916,9 @@ input, select, textarea {
 						height: 3em;
 						line-height: 3em;
 						padding: 0 1.5em;
-						background-color: rgba(255, 255, 255, 0.5);
+						background-color: rgba(0, 0, 0, 0.5); 
+
+						/* color: #ffffff;  COLOR OF HAMBURGER*/
 						border-radius: 4px;
 						border: 0;
 						font-size: 0.8em;
@@ -2903,12 +2929,15 @@ input, select, textarea {
 
 					#header nav ul li a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
-						width: 4em;
-						text-indent: 4em;
+						color: #aeaeae;
+						width: 7em;
+						text-align: center;
+						/* text-indent: 4em; */
 						font-size: 1em;
 						overflow: hidden;
 						padding: 0;
 						white-space: nowrap;
+						
 					}
 
 						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
@@ -2929,12 +2958,12 @@ input, select, textarea {
 						}
 
 						#header nav ul li a[href="#menu"]:before {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+							/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E"); */
 							opacity: 0;
 						}
 
 						#header nav ul li a[href="#menu"]:after {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+							/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E"); */
 							opacity: 1;
 						}
 
@@ -2960,11 +2989,12 @@ input, select, textarea {
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
 						background-size: 1.5em 1.5em;
 					}
-
 		}
 
 /* Menu */
 
+
+  
 	#wrapper {
 		-moz-transition: opacity 0.45s ease;
 		-webkit-transition: opacity 0.45s ease;
@@ -2989,7 +3019,7 @@ input, select, textarea {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
+		background: #191919;
 		color: #ffffff;
 		cursor: default;
 		visibility: hidden;
@@ -3079,12 +3109,12 @@ input, select, textarea {
 			}
 
 			#menu > .close:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
+				/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E"); */
 				opacity: 0;
 			}
 
 			#menu > .close:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
+				/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E"); */
 				opacity: 1;
 			}
 
@@ -3126,7 +3156,7 @@ input, select, textarea {
 	body.is-menu-visible #wrapper {
 		pointer-events: none;
 		cursor: default;
-		opacity: 0.25;
+		opacity: 0.5;
 	}
 
 	body.is-menu-visible #menu {

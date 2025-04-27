@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>James Sukanto Design Archive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background-image: url('images/changiar1.png');
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 60vh;
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="inner">
+					<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
+				</div>
+			</header>
+			
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Works</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="inner">
+					<h1>AR: Digitizing Changi Airport ground operations</h1>
+					<h2>Challenge</h2>
+					<p>
+						Paper instructions are slow to update. For SATS, the ground-handling operator in Singapore Changi Airport, this drawback means inefficient cargo loading and less lead-time for flights to make their scheduled departures.
+					</p>
+					<h2>Solution, and my Role</h2>
+
+					<p>
+						We developed a Vuzix M300 smart glass app to improve cargo handling accuracy, efficiency, and safety. My role focused on UI/UX: conducting field research, analyzing user tasks, and designing intuitive interactions and reusable components.
+					</p>
+					<h2>
+						1. Research Phase
+					</h2>
+					<p>
+						1.1  Field visit
+						<br>During the field visit, we collected heaps of information by observing the ground crews at work and talking to them about pain points and current fixes. We briefly ran through the procedural literature, too. A few pain points became obvious:
+					</p>
+					<ul>
+						<li>While the effort needed to perform related user actions such as cargo identification, cargo status updates, crews notification is deemed minimal, the frequency level is high</li>
+						<li>Users often switch between two activities, that is, operating a cargo carrier and checking/updating the cargo status with paper documentation, as their hands are occupied.</li>
+						<li>Control-based personnel are unable to monitor the onsite operation and performance issues</li>
+						<li>Users are men in their thirties and are beginners with the wearable technology.</li>
+					</ul>
+				</div>
+				<span class="image main"><img src="images/changiar2.png"/></span>
+				<div class="inner">
+					<p>
+						1.2  Role-based tasks analysis
+						<br>We enumerated and sequenced the tasks according to the three user roles:
+					</p>
+					<ul>
+						<li>Officer, who coordinates the Transporters. Officers are principally responsible for identifying where the next cargo to be loaded and informing its location to Transporters.</li>
+						<li>Transporters, who drive the cargo to the ramp.</li>
+						<li>Loaders, who receive the cargo from Transporters and position the cargo on the plane.</li>
+					</ul>
+				</div>
+				<span class="image main"><img src="images/changiar3.png" alt="" /></span>
+				<div class="inner">
+					<h2>
+						2. Design Phase
+					</h2>
+					<p>
+						2.1  Solving 'slow'
+						<br>An obvious solution is to automate the entire workflow. While that might satisfy the demand for efficiency and cost-cutting, we devised a more attainable workaround by centralizing the database and automating the necessary.
+						<br><br>2.2  Centralize loading data
+						<br>Out in the field, paper procedures make collective status updating tricky: either all the crews rely on a single physical copy, or, each crew has their own which might evolve separately. The app design presents users with a centralized cargo loading plan with an update and notification framework. 
+						<br><br>For instance, when a Loader has positioned the cargo, and updated the cargo status to 'Locked' confirms the position, the Officer is alerted without needing to use existing walkie-talkies. Other crews are however not alerted to prevent overwhelming notifications.
+						<br><br>Critical information such as the loading sequence, cargo weight, and allocated cargo positions are displayed on Vuzik real time. The system ensures the right information is shown to the right person, at the right time.
+					</p>
+					<div class="video main" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; height: calc(40vw * 9 / 8); margin: 0 auto;">
+						<iframe 
+						  src="https://www.youtube.com/embed/_orxpDTdMlk?si=LkDsvWFv493yl3SU" 
+						  style="width: 100%; height: 100%;" 
+						  frameborder="0"
+						  allow="autoplay; encrypted-media"
+						  allowfullscreen>
+						</iframe>
+						<p style="margin-top: 1em; font-size: 1em; color: #888;">
+						  Loader flow
+						</p>
+					</div>
+					<p>
+						2.3  Combine user actions
+						<br>The fewer direct user inputs Transporter has to provide, the fewer actions need to be performed. We learned that there is room to combine several user actions into one: as a user scans a cargo, the user event be used to trigger the cargo identification, cargo weight info retrieval, perform status update, and notify relevant crews about the new cargo status. Granted, this happens only under the right condition - when the user happens to scan the next cargo to be loaded.
+						<br><br>Under typical circumstances, only the first two of the four user actions can be combined. Either way, it helps the Transporters to focus on the cargo safely and avoid switching between driving the cargo carrier and identifying the cargo.
+					</p>
+					<div class="video main" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; height: calc(40vw * 9 / 8); margin: 0 auto;">
+						<iframe 
+						  src="https://youtu.be/9PsUKtdGUoI?si=pTsElDDPoJhakbm3" 
+						  style="width: 100%; height: 100%;" 
+						  frameborder="0"
+						  allow="autoplay; encrypted-media"
+						  allowfullscreen>
+						</iframe>
+						<p style="margin-top: 1em; font-size: 1em; color: #888;">
+						  Transporter flow
+						</p>
+					</div>
+
+					<p>
+						2.4  Design reusable components for small screen
+						<br>We went through two design reviews and iterations on the Welcome screens, notifications and loading plan for the small screen displa. I also settled on the high contrast to ensure legibility out in the bright day in the field. 
+					</p>
+				</div>
+				<span class="image main"><img src="images/changiar4.png" alt="" /></span>
+				<div class="inner">
+					<p>
+						2.5  Address edge cases
+						<br>My initial approach was to steer clear from edge case scenarios until the primary workflow is satisfied. This helped me focus on simplifying experiences for the three user profiles. As the project advanced, we carefully considered the following edge cases:
+					</p>
+					<ul>
+						<li>Differentiating certain load categories (cargo, luggage, baggage, no-fit) and cargo states.</li>
+						<li>Assigning slots for baggage.</li>
+						<li>Version change of the cargo loading plan from the control tower​​​​​​​.</li>
+					</ul>
+					<span class="image main"><img src="images/changiar5.gif" alt="" /></span>
+					<p>
+						Version Change refers to total relaying out of the loading sequence, and occurs rarely. To ease the inconvenience, the crews should be notified and informed of what to do next (offloading > reloading)
+						<br><br>
+					</p>
+					<span class="image main"><img src="images/changiar6.gif" alt="" /></span>
+					<p>
+						No-fit refers to leaving out certain slots empty (total cargo weight is averaged so the plane does not tilt when it flies!). Locking the slot is required.
+						<br><br>
+					</p>
+					<h2>3. Evaluation Phase</h2>
+					<p>
+						3.1  Trade offs
+						<br>Real-time video capture of the crew's POV proved to be a major issue due to the current lack of infrastructure and device battery drain. Camera shots, for the time being, suffice to facilitate sharing of an on-site issue visually with the control-based personnel.
+						Early prototype using the AR framework (White indicates the positions to be loaded next):
+					</p>
+					<span class="image main"><img src="images/changiar7.png" alt="" /></span>
+					<p>
+						3.2. What's next
+						<br>Project Arrow is undergoing more testing and the technology is being employed for training purposes on selected flights in Singapore and joint ventures in the region. Success metrics considered include overall operation duration and completion rate, loading error rate, crew satisfaction, scan-to-load time, contact rate and contact duration to the control base.
+						<br><br>We have also received the award for the Best Tech Collaboration at the annual Singapore International Chamber of Commerce Awards.
+					</p>
+					<div class="video main" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; height: calc(40vw * 9 / 8); margin: 0 auto;">
+						<iframe 
+						  src="https://youtu.be/IgtuzTLOCVc?si=2vNoYtJr1pjFvQq6" 
+						  style="width: 100%; height: 100%;" 
+						  frameborder="0"
+						  allow="autoplay; encrypted-media"
+						  allowfullscreen>
+						</iframe>
+						<p style="margin-top: 1em; font-size: 1em; color: #888;">
+						  Media coverage
+						</p>
+					</div>
+				</div>
+				<span class="image main"><img src="images/changiar8.jpg" alt="" /></span>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
