@@ -6,7 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+		<style>
+			#header {
+				background-image: url('images/perx1.png');
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 60vh;
+				display: flex;
+			}
+			
+			/* Custom hover colors for buttons */
+			.floating-home-button:hover,
+			.back-btn:hover {
+				background-color: cyan !important;
+				background: cyan !important;
+				color: white !important;
+			}
+			
+			.cta-button-inline:hover {
+				background-color: cyan !important;
+				color: white !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
@@ -135,8 +157,12 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
+					<div class="footer-cta">
+						<p>Starting something?</p>
+						<a href="mailto:jamessukanto@gmail.com" class="cta-button-inline">Get in touch</a>
+					</div>
 					<div class="copyright">
-						<p>© 2024 James Sukanto • 
+						<p>© 2025 James Sukanto • 
 						<a href="mailto:jamessukanto@gmail.com" onclick="copyEmail(event)">jamessukanto@gmail.com</a>
 						</p>
 					</div>

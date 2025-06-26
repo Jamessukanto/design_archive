@@ -103,10 +103,52 @@ const SiteUtils = {
 		// Add to the page
 		document.body.appendChild(homeButton);
 
+		// Position the button to align with content
+		this.alignHomeButton(homeButton);
+
+		// Re-align on window resize
+		const debouncedAlign = this.debounce(() => this.alignHomeButton(homeButton), 100);
+		window.addEventListener('resize', debouncedAlign);
+
 		// Add smooth scroll behavior if needed
 		homeButton.addEventListener('click', function(e) {
 			// Let the default navigation behavior work
 			// Could add custom transition here if needed
+		});
+	},
+
+	// Align home button with content left edge
+	alignHomeButton(homeButton) {
+		if (!homeButton) return;
+
+		// Wait for next frame to ensure layout is complete
+		requestAnimationFrame(() => {
+			// Find the content area to align with
+			const contentInner = document.querySelector('#main .inner');
+			if (!contentInner) {
+				// Fallback to CSS positioning
+				homeButton.style.left = '';
+				return;
+			}
+
+			// Get the computed style left position of the content area
+			const contentRect = contentInner.getBoundingClientRect();
+			const leftPosition = contentRect.left;
+
+			// Calculate minimum spacing based on screen width
+			const screenWidth = window.innerWidth;
+			let minSpacing;
+			
+			if (screenWidth <= 480) {
+				minSpacing = 20; // More spacing on very small screens
+			} else if (screenWidth <= 736) {
+				minSpacing = 15; // Medium spacing on small screens
+			} else {
+				minSpacing = 10; // Standard spacing on larger screens
+			}
+
+			// Apply the position with responsive minimum distance from the edge
+			homeButton.style.left = Math.max(minSpacing, leftPosition) + 'px';
 		});
 	},
 

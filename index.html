@@ -6,7 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+		<style>
+			/* Custom hover colors for links and buttons */
+			a[href*="linkedin.com"]:hover {
+				color: cyan !important;
+				text-decoration-color: cyan !important;
+			}
+			
+			a[href*="github.com"]:hover {
+				color: cyan !important;
+				text-decoration-color: cyan !important;
+			}
+			
+			.cta-button-inline:hover {
+				background-color: cyan !important;
+				color: white !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
@@ -30,7 +46,8 @@
 								<h1>
 									Hello, I'm 
 									<a href="https://www.linkedin.com/in/jamessukanto/" 
-									   style="color: rgb(69, 122, 255);">
+									   style="color: rgb(69, 122, 255); text-decoration-color: rgb(69, 122, 255);"
+									   target="_blank">
 										James Sukanto
 									</a> 🕵🏻‍♂️
 								</h1> 
@@ -49,7 +66,8 @@
 									
 									This portfolio's an older archive, mostly UI/UX. For recent work, check
 									<a href="https://www.github.com/jamessukanto/" 
-									   style="color: rgb(114, 153, 253); text-decoration: underline;">
+									   style="color: rgb(114, 153, 253); text-decoration: underline;"
+									   target="_blank">
 										GitHub
 									</a>
 									<br>
@@ -113,20 +131,17 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
+					<div class="footer-cta">
+						<p>Starting something?</p>
+						<a href="mailto:jamessukanto@gmail.com" class="cta-button-inline">Get in touch</a>
+					</div>
 					<div class="copyright">
-						<p>© 2024 James Sukanto • 
+						<p>© 2025 James Sukanto • 
 						<a href="mailto:jamessukanto@gmail.com" onclick="copyEmail(event)">jamessukanto@gmail.com</a>
 						</p>
 					</div>
 				</div>
 			</footer>
-		</div>
-
-		<!-- Project Preview Window -->
-		<div id="project-preview" class="preview-window">
-			<div class="preview-image-container">
-				<img id="preview-image" src="" alt="Project Preview" />
-			</div>
 		</div>
 
 		<!-- Scripts -->
