@@ -112,7 +112,11 @@ const SiteUtils = {
 };
 
 // Backward compatibility
-function copyEmail() {
+function copyEmail(event) {
+	// If called with an event (from footer link), prevent mailto and copy instead
+	if (event) {
+		event.preventDefault();
+	}
 	SiteUtils.copyEmail();
 }
 

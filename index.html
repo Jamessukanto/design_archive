@@ -1,35 +1,32 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>James Sukanto Design Archive</title>
+		<title>James Sukanto Design Archive - James Sukanto Design Archive</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
-
 	<body class="is-preload">
-			<div id="wrapper">
+		<div id="wrapper">
+			<header id="header">
+				<div class="inner">
+					<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
+				</div>
+			</header>
+			
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Works</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
 
-				<header id="header">
-					<div class="inner">
-						<nav><ul><li><a href="#menu">Menu</a></li></ul></nav>
-					</div>
-				</header>
-				
-				<nav id="menu">
-					<h2>Menu</h2>
-					<ul>
-						<li><a href="index.html">Works</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
+			<div id="main">
+				<div class="inner">
+					<header>
 								<h1>
 									Hello, I'm 
 									<a href="https://www.linkedin.com/in/jamessukanto/" 
@@ -43,21 +40,13 @@
 									Each design choice is a nudge to simplify decision making.
 									
 									<br>Tools: Figma, LangGraph, PyTorch, Django, React.
-
-									<!-- &nbsp; -->
-									<!-- <a href="https://www.linkedin.com/in/jamessukanto/"  -->
-									   <!-- style="color: rgb(153, 153, 153); text-decoration: underline; font-weight: bold;"> -->
-										<!-- LinkedIn -->
-									<!-- </a>  -->
-
-									<br><br>📧 &nbsp; 
-									<a href="#" 
-									   onclick="copyEmail()" 
-									   style="color: rgb(114, 153, 253); text-decoration: underline;">
-										jamessukanto@gmail.com
-									</a>
-
+									
 									<br><br>
+									<a href="mailto:jamessukanto@gmail.com" class="cta-button-inline">
+										Get in touch
+									</a>
+									<br><br>
+									
 									This portfolio's an older archive, mostly UI/UX. For recent work, check
 									<a href="https://www.github.com/jamessukanto/" 
 									   style="color: rgb(114, 153, 253); text-decoration: underline;">
@@ -118,19 +107,27 @@
 									</span>
 								</article>
 							</section>
-
-						</div>
-					</div>
+				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/config.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/shared.js"></script>
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="copyright">
+						<p>© 2024 James Sukanto • 
+						<a href="mailto:jamessukanto@gmail.com" onclick="copyEmail(event)">jamessukanto@gmail.com</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
 
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/shared.js"></script>
 	</body>
-</html>
+</html> 

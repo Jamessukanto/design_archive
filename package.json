@@ -6,9 +6,10 @@
   "scripts": {
     "start": "python3 -m http.server 8080",
     "dev": "python3 -m http.server 8080",
-    "build": "echo 'Static site - deploys automatically via GitHub Pages'",
+    "build": "python3 build-templates.py",
+    "build:watch": "npx sass --watch assets/sass/main.scss assets/css/main.css",
     "validate": "echo 'HTML validation for GitHub Pages'",
-    "deploy": "git push origin main",
+    "deploy": "npm run build && git add . && git commit -m 'Build templates' && git push origin main",
     "preview": "echo 'Preview: https://jamessukanto.github.io/design_archive'"
   },
   "repository": {
