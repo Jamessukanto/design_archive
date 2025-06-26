@@ -171,6 +171,43 @@ const SiteUtils = {
 		});
 	},
 
+	// Simple lazy loading implementation
+	initLazyLoading() {
+		// Auto-add lazy loading to project page images (but not homepage thumbnails)
+		if (window.location.pathname.includes('proj_')) {
+			const projectImages = document.querySelectorAll('.image.main img, img[style*="width: 100%"]');
+			projectImages.forEach((img, index) => {
+				// Skip the first image (likely above the fold)
+				if (index > 0 && !img.hasAttribute('loading')) {
+					img.setAttribute('loading', 'lazy');
+				}
+			});
+		}
+
+		// Check if browser supports native lazy loading
+		if ('loading' in HTMLImageElement.prototype) {
+			return; // Native lazy loading is supported, no fallback needed
+		}
+
+		// Simple intersection observer fallback for older browsers
+		if ('IntersectionObserver' in window) {
+			const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+			
+			const imageObserver = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const img = entry.target;
+						// Image is already loaded with src, just remove the lazy attribute
+						img.removeAttribute('loading');
+						observer.unobserve(img);
+					}
+				});
+			});
+
+			lazyImages.forEach(img => imageObserver.observe(img));
+		}
+	},
+
 	// Initialize project preview functionality
 	initProjectPreviews() {
 		// Only run on homepage
@@ -287,6 +324,9 @@ function copyEmail(event) {
 
 // Initialize site utilities when DOM is ready
 function initSiteUtils() {
+	// Initialize lazy loading for images
+	SiteUtils.initLazyLoading();
+
 	// Add floating home button on project pages
 	SiteUtils.addFloatingHomeButton();
 
