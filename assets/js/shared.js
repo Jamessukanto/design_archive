@@ -108,6 +108,104 @@ const SiteUtils = {
 			// Let the default navigation behavior work
 			// Could add custom transition here if needed
 		});
+	},
+
+	// Initialize project preview functionality
+	initProjectPreviews() {
+		// Only run on homepage
+		if (!window.location.pathname.endsWith('index.html') && 
+			!window.location.pathname.endsWith('/')) {
+			return;
+		}
+
+		const previewWindow = document.getElementById('project-preview');
+		const previewImage = document.getElementById('preview-image');
+		const projectTiles = document.querySelectorAll('.tiles article[data-preview]');
+
+		if (!previewWindow || !previewImage || projectTiles.length === 0) {
+			return;
+		}
+
+		let currentHoverTile = null;
+		let hoverTimeout = null;
+
+		// Mouse move handler for preview window positioning
+		const handleMouseMove = this.debounce((e) => {
+			if (currentHoverTile) {
+				// Center the preview window over the cursor
+				const previewWidth = 400;
+				const previewHeight = 240;
+				
+				let x = e.clientX - (previewWidth / 2);
+				let y = e.clientY - (previewHeight / 2);
+				
+				// Keep preview window within viewport
+				const windowWidth = window.innerWidth;
+				const windowHeight = window.innerHeight;
+				
+				// Adjust if window would go outside viewport
+				if (x < 10) {
+					x = 10;
+				}
+				if (x + previewWidth > windowWidth - 10) {
+					x = windowWidth - previewWidth - 10;
+				}
+				if (y < 10) {
+					y = 10;
+				}
+				if (y + previewHeight > windowHeight - 10) {
+					y = windowHeight - previewHeight - 10;
+				}
+				
+				previewWindow.style.left = x + 'px';
+				previewWindow.style.top = y + 'px';
+			}
+		}, 16); // ~60fps
+
+		// Add event listeners to each project tile
+		projectTiles.forEach(tile => {
+			const previewImageSrc = tile.getAttribute('data-preview');
+			
+			tile.addEventListener('mouseenter', () => {
+				currentHoverTile = tile;
+				
+				// Clear any existing timeout
+				if (hoverTimeout) {
+					clearTimeout(hoverTimeout);
+				}
+				
+				// Load the preview image
+				previewImage.src = 'images/' + previewImageSrc;
+				previewImage.classList.remove('scrolling'); // Reset animation
+				
+				// Force reflow to restart animation
+				void previewImage.offsetWidth;
+				previewImage.classList.add('scrolling');
+				
+				// Show preview window immediately
+				previewWindow.classList.add('visible');
+			});
+
+			tile.addEventListener('mouseleave', () => {
+				currentHoverTile = null;
+				previewWindow.classList.remove('visible');
+				
+				// Clear timeout if set
+				if (hoverTimeout) {
+					clearTimeout(hoverTimeout);
+					hoverTimeout = null;
+				}
+			});
+
+			tile.addEventListener('mousemove', handleMouseMove);
+		});
+
+		// Handle image load errors
+		previewImage.addEventListener('error', () => {
+			console.warn('Failed to load preview image:', previewImage.src);
+		});
+
+		console.log('Project previews initialized for', projectTiles.length, 'tiles');
 	}
 };
 
@@ -124,6 +222,9 @@ function copyEmail(event) {
 function initSiteUtils() {
 	// Add floating home button on project pages
 	SiteUtils.addFloatingHomeButton();
+
+	// Initialize project previews on homepage
+	SiteUtils.initProjectPreviews();
 
 	// Initialize image error handling
 	const images = document.querySelectorAll('img');
