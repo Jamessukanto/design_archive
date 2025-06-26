@@ -3333,4 +3333,5 @@ input, select, textarea {
 		max-width: 68em;
 		margin: 0 auto;
 		padding: 0 2.5em;
+		border: 2px solid red !important; /* TEMP: Visual debugging */
 	}
