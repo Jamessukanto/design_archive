@@ -2791,7 +2791,7 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1200px) {
 
 			.tiles {
 				margin: 0 !important;
@@ -2809,6 +2809,24 @@ input, select, textarea {
 						-ms-transform: scale(1.0);
 						transform: scale(1.0);
 					}
+
+		}
+
+		/* Ensure mobile devices always get single column */
+		@media screen and (max-width: 768px) {
+
+			.tiles {
+				margin: 0 !important;
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+				.tiles article {
+					width: 100% !important;
+					max-width: 100% !important;
+					margin: 1.25em 0 0 0 !important;
+					flex: none !important;
+				}
 
 		}
 
