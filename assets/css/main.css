@@ -3427,3 +3427,39 @@ input, select, textarea {
 .back-btn:active {
 	transform: translateY(0);
 }
+
+/* Toast notification for visual feedback */
+.toast-notification {
+	position: fixed;
+	top: 50px;
+	right: 20px;
+	background: #333333;
+	color: #ffffff;
+	padding: 12px 20px;
+	border-radius: 8px;
+	font-size: 0.9em;
+	font-weight: 500;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	opacity: 0;
+	transform: translateX(100%);
+	transition: all 0.3s ease;
+	z-index: 1001;
+	max-width: 300px;
+}
+
+.toast-notification.toast-show {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.toast-notification.toast-success {
+	background: rgb(69, 122, 255);
+}
+
+.toast-notification.toast-error {
+	background: #dc3545;
+}
+
+.toast-notification.toast-info {
+	background: rgb(69, 122, 255);
+}

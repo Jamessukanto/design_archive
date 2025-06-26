@@ -9,11 +9,37 @@ const SiteUtils = {
 	copyEmail() {
 		const email = window.CONFIG?.site?.email || 'jamessukanto@gmail.com';
 		navigator.clipboard.writeText(email)
-			.then(() => alert('Email copied!'))
+			.then(() => this.showToast('Email copied!', 'success'))
 			.catch((err) => {
 				console.error('Failed to copy email:', err);
-				alert('Failed to copy email');
+				this.showToast('Failed to copy email', 'error');
 			});
+	},
+
+	// Show toast notification
+	showToast(message, type = 'info') {
+		// Remove existing toast if any
+		const existingToast = document.querySelector('.toast-notification');
+		if (existingToast) {
+			existingToast.remove();
+		}
+
+		// Create toast element
+		const toast = document.createElement('div');
+		toast.className = `toast-notification toast-${type}`;
+		toast.textContent = message;
+
+		// Add to page
+		document.body.appendChild(toast);
+
+		// Show with animation
+		setTimeout(() => toast.classList.add('toast-show'), 100);
+
+		// Auto-hide after 3 seconds
+		setTimeout(() => {
+			toast.classList.remove('toast-show');
+			setTimeout(() => toast.remove(), 300);
+		}, 3000);
 	},
 
 	// Enhanced image loading with error handling
