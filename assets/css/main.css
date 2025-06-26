@@ -2794,12 +2794,13 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.tiles {
-				margin: 0;
+				margin: 0 !important;
 			}
 
 				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
+					width: 100% !important;
+					margin: 1.25em 0 0 0 !important;
+					flex: none !important;
 				}
 
 					.tiles article:hover > .image {
