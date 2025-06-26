@@ -3334,11 +3334,3 @@ input, select, textarea {
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
-
-		@media screen and (max-width: 600px) {
-
-			#wrapper > * > .inner {
-				padding: 0 1.25em;
-			}
-
-		}
