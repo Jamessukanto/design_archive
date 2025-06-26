@@ -1,0 +1,12 @@
+
+# Alternative Video Optimization Commands
+# Run these commands if you have ffmpeg installed:
+
+# Option 1: Convert to WebM (much smaller file size)
+ffmpeg -i images/changiemV.mp4 -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus images/changiemV.webm
+
+# Option 2: Heavily compress MP4
+ffmpeg -i images/changiemV.mp4 -c:v libx264 -crf 28 -preset medium -vf scale=1280:720 -c:a aac -b:a 128k -movflags +faststart images/changiemV_compressed.mp4
+
+# Option 3: Create a very small preview version
+ffmpeg -i images/changiemV.mp4 -c:v libx264 -crf 35 -preset medium -vf scale=640:360 -c:a aac -b:a 64k -movflags +faststart images/changiemV_preview.mp4

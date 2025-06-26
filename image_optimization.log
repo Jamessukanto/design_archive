@@ -1,0 +1,305 @@
+2025-06-27 01:16:35,229 - INFO - Creating backup of original images...
+2025-06-27 01:16:35,483 - INFO - Backup created at images_backup
+2025-06-27 01:16:35,487 - INFO - Found 75 files to process
+2025-06-27 01:16:35,488 - INFO - Processing images/aisg4.png (Original size: 236.4KB)
+2025-06-27 01:16:35,866 - INFO - Optimized: 201.8KB (14.6% reduction)
+2025-06-27 01:16:35,866 - INFO - Processing images/t_boots.png (Original size: 815.1KB)
+2025-06-27 01:16:35,994 - INFO - Resized to 450x600
+2025-06-27 01:16:36,003 - INFO - Converted PNG to JPG
+2025-06-27 01:16:36,004 - INFO - Optimized: 33.4KB (95.9% reduction)
+2025-06-27 01:16:36,004 - INFO - Processing images/aisg14.png (Original size: 555.1KB)
+2025-06-27 01:16:36,067 - INFO - Converted PNG to JPG
+2025-06-27 01:16:36,068 - INFO - Optimized: 90.4KB (83.7% reduction)
+2025-06-27 01:16:36,069 - INFO - Processing images/aisg5.png (Original size: 203.3KB)
+2025-06-27 01:16:36,433 - INFO - Optimized: 158.2KB (22.2% reduction)
+2025-06-27 01:16:36,434 - INFO - Processing images/aisg7.png (Original size: 192.2KB)
+2025-06-27 01:16:36,708 - INFO - Optimized: 156.4KB (18.6% reduction)
+2025-06-27 01:16:36,709 - INFO - Processing images/t_aisg.png (Original size: 410.0KB)
+2025-06-27 01:16:36,778 - INFO - Resized to 450x600
+2025-06-27 01:16:36,873 - INFO - Optimized: 104.8KB (74.4% reduction)
+2025-06-27 01:16:36,874 - INFO - Processing images/aisg6.png (Original size: 224.2KB)
+2025-06-27 01:16:37,259 - INFO - Optimized: 183.1KB (18.3% reduction)
+2025-06-27 01:16:37,260 - INFO - Processing images/aisg2.png (Original size: 198.0KB)
+2025-06-27 01:16:37,587 - INFO - Optimized: 160.9KB (18.7% reduction)
+2025-06-27 01:16:37,587 - INFO - Processing images/perx8.png (Original size: 189.7KB)
+2025-06-27 01:16:37,808 - INFO - Optimized: 198.5KB (-4.7% reduction)
+2025-06-27 01:16:37,809 - INFO - Processing images/aisg13.png (Original size: 236.8KB)
+2025-06-27 01:16:38,107 - INFO - Optimized: 206.6KB (12.8% reduction)
+2025-06-27 01:16:38,108 - INFO - Processing images/aisg12.png (Original size: 236.9KB)
+2025-06-27 01:16:38,404 - INFO - Optimized: 203.4KB (14.1% reduction)
+2025-06-27 01:16:38,404 - INFO - Processing images/perx9.png (Original size: 187.4KB)
+2025-06-27 01:16:38,615 - INFO - Optimized: 184.9KB (1.3% reduction)
+2025-06-27 01:16:38,616 - INFO - Processing images/aisg3.png (Original size: 290.9KB)
+2025-06-27 01:16:38,917 - INFO - Optimized: 279.0KB (4.1% reduction)
+2025-06-27 01:16:38,918 - INFO - Processing images/aisg1.png (Original size: 144.6KB)
+2025-06-27 01:16:39,013 - INFO - Optimized: 118.5KB (18.0% reduction)
+2025-06-27 01:16:39,014 - INFO - Processing images/aisg10.png (Original size: 180.1KB)
+2025-06-27 01:16:39,246 - INFO - Optimized: 135.1KB (25.0% reduction)
+2025-06-27 01:16:39,247 - INFO - Processing images/aisg11.png (Original size: 231.7KB)
+2025-06-27 01:16:39,513 - INFO - Optimized: 205.1KB (11.5% reduction)
+2025-06-27 01:16:39,514 - INFO - Processing images/changiem9.png (Original size: 104.6KB)
+2025-06-27 01:16:39,664 - INFO - Resized to 1920x624
+2025-06-27 01:16:39,860 - INFO - Optimized: 136.7KB (-30.7% reduction)
+2025-06-27 01:16:39,861 - INFO - Processing images/vrclick2.png (Original size: 1200.0KB)
+2025-06-27 01:16:39,915 - INFO - Converted PNG to JPG
+2025-06-27 01:16:39,915 - INFO - Optimized: 107.1KB (91.1% reduction)
+2025-06-27 01:16:39,916 - INFO - Processing images/changiem8.png (Original size: 506.8KB)
+2025-06-27 01:16:39,955 - INFO - Converted PNG to JPG
+2025-06-27 01:16:39,955 - INFO - Optimized: 69.5KB (86.3% reduction)
+2025-06-27 01:16:39,956 - INFO - Processing images/vrclick1.png (Original size: 546.1KB)
+2025-06-27 01:16:39,990 - INFO - Converted PNG to JPG
+2025-06-27 01:16:39,991 - INFO - Optimized: 56.3KB (89.7% reduction)
+2025-06-27 01:16:39,991 - INFO - Processing images/perx10.png (Original size: 138.8KB)
+2025-06-27 01:16:40,075 - INFO - Optimized: 185.4KB (-33.5% reduction)
+2025-06-27 01:16:40,076 - INFO - Processing images/changiem6.png (Original size: 619.5KB)
+2025-06-27 01:16:40,117 - INFO - Converted PNG to JPG
+2025-06-27 01:16:40,117 - INFO - Optimized: 76.0KB (87.7% reduction)
+2025-06-27 01:16:40,118 - INFO - Processing images/boots3.png (Original size: 833.0KB)
+2025-06-27 01:16:40,195 - INFO - Converted PNG to JPG
+2025-06-27 01:16:40,195 - INFO - Optimized: 84.9KB (89.8% reduction)
+2025-06-27 01:16:40,196 - INFO - Processing images/boots2.png (Original size: 373.4KB)
+2025-06-27 01:16:40,295 - INFO - Resized to 1920x534
+2025-06-27 01:16:41,313 - INFO - Optimized: 627.5KB (-68.1% reduction)
+2025-06-27 01:16:41,313 - INFO - Processing images/changiem7.png (Original size: 643.3KB)
+2025-06-27 01:16:41,360 - INFO - Converted PNG to JPG
+2025-06-27 01:16:41,361 - INFO - Optimized: 79.2KB (87.7% reduction)
+2025-06-27 01:16:41,362 - INFO - Processing images/perx11.png (Original size: 128.8KB)
+2025-06-27 01:16:41,567 - INFO - Optimized: 121.2KB (5.9% reduction)
+2025-06-27 01:16:41,568 - INFO - Processing images/changiem5.png (Original size: 187.2KB)
+2025-06-27 01:16:41,657 - INFO - Optimized: 165.2KB (11.7% reduction)
+2025-06-27 01:16:41,657 - INFO - Processing images/wine3.png (Original size: 972.8KB)
+2025-06-27 01:16:41,715 - INFO - Converted PNG to JPG
+2025-06-27 01:16:41,715 - INFO - Optimized: 83.8KB (91.4% reduction)
+2025-06-27 01:16:41,716 - INFO - Processing images/wine2.png (Original size: 1211.2KB)
+2025-06-27 01:16:41,778 - INFO - Converted PNG to JPG
+2025-06-27 01:16:41,778 - INFO - Optimized: 129.6KB (89.3% reduction)
+2025-06-27 01:16:41,778 - INFO - Processing images/boots1.png (Original size: 242.1KB)
+2025-06-27 01:16:42,425 - INFO - Optimized: 214.1KB (11.5% reduction)
+2025-06-27 01:16:42,425 - INFO - Processing images/changiem4.png (Original size: 178.4KB)
+2025-06-27 01:16:42,560 - INFO - Resized to 1920x909
+2025-06-27 01:16:42,792 - INFO - Optimized: 286.0KB (-60.3% reduction)
+2025-06-27 01:16:42,793 - INFO - Processing images/t_vr_click.png (Original size: 1758.5KB)
+2025-06-27 01:16:42,876 - INFO - Resized to 450x600
+2025-06-27 01:16:42,886 - INFO - Converted PNG to JPG
+2025-06-27 01:16:42,888 - INFO - Optimized: 40.2KB (97.7% reduction)
+2025-06-27 01:16:42,888 - INFO - Processing images/changiem1.png (Original size: 828.3KB)
+2025-06-27 01:16:42,935 - INFO - Converted PNG to JPG
+2025-06-27 01:16:42,935 - INFO - Optimized: 62.3KB (92.5% reduction)
+2025-06-27 01:16:42,936 - INFO - Processing images/changiem3.png (Original size: 285.0KB)
+2025-06-27 01:16:43,029 - INFO - Resized to 1920x658
+2025-06-27 01:16:43,277 - INFO - Optimized: 467.9KB (-64.2% reduction)
+2025-06-27 01:16:43,277 - INFO - Processing images/t_wine.png (Original size: 2269.5KB)
+2025-06-27 01:16:43,363 - INFO - Resized to 450x600
+2025-06-27 01:16:43,372 - INFO - Converted PNG to JPG
+2025-06-27 01:16:43,372 - INFO - Optimized: 52.7KB (97.7% reduction)
+2025-06-27 01:16:43,373 - INFO - Processing images/changiem2.png (Original size: 24.2KB)
+2025-06-27 01:16:43,395 - INFO - Optimized: 27.0KB (-11.8% reduction)
+2025-06-27 01:16:43,395 - INFO - Processing images/perx7.png (Original size: 154.4KB)
+2025-06-27 01:16:43,555 - INFO - Optimized: 181.8KB (-17.7% reduction)
+2025-06-27 01:16:43,557 - INFO - Processing images/t_changi_emer.png (Original size: 1832.3KB)
+2025-06-27 01:16:43,653 - INFO - Resized to 450x600
+2025-06-27 01:16:43,662 - INFO - Converted PNG to JPG
+2025-06-27 01:16:43,663 - INFO - Optimized: 39.1KB (97.9% reduction)
+2025-06-27 01:16:43,663 - INFO - Processing images/changiar3.png (Original size: 255.6KB)
+2025-06-27 01:16:43,833 - INFO - Optimized: 222.0KB (13.2% reduction)
+2025-06-27 01:16:43,834 - INFO - Processing images/changiar2.png (Original size: 891.3KB)
+2025-06-27 01:16:43,887 - INFO - Converted PNG to JPG
+2025-06-27 01:16:43,887 - INFO - Optimized: 85.8KB (90.4% reduction)
+2025-06-27 01:16:43,888 - INFO - Processing images/t_vr_saber.png (Original size: 1014.5KB)
+2025-06-27 01:16:43,962 - INFO - Resized to 450x600
+2025-06-27 01:16:43,970 - INFO - Converted PNG to JPG
+2025-06-27 01:16:43,970 - INFO - Optimized: 34.6KB (96.6% reduction)
+2025-06-27 01:16:43,970 - INFO - Processing images/perx6.png (Original size: 22.8KB)
+2025-06-27 01:16:44,037 - INFO - Optimized: 36.0KB (-57.5% reduction)
+2025-06-27 01:16:44,038 - INFO - Processing images/changiem14.png (Original size: 610.1KB)
+2025-06-27 01:16:44,082 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,082 - INFO - Optimized: 37.2KB (93.9% reduction)
+2025-06-27 01:16:44,083 - INFO - Processing images/perx4.png (Original size: 92.8KB)
+2025-06-27 01:16:44,164 - INFO - Optimized: 87.7KB (5.5% reduction)
+2025-06-27 01:16:44,165 - INFO - Processing images/changiar1.png (Original size: 631.0KB)
+2025-06-27 01:16:44,212 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,212 - INFO - Optimized: 50.3KB (92.0% reduction)
+2025-06-27 01:16:44,213 - INFO - Processing images/perx5.png (Original size: 19.9KB)
+2025-06-27 01:16:44,226 - INFO - Optimized: 19.5KB (2.0% reduction)
+2025-06-27 01:16:44,227 - INFO - Processing images/vrperi2.png (Original size: 513.3KB)
+2025-06-27 01:16:44,271 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,272 - INFO - Optimized: 48.6KB (90.5% reduction)
+2025-06-27 01:16:44,272 - INFO - Processing images/changiem13.png (Original size: 627.5KB)
+2025-06-27 01:16:44,313 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,313 - INFO - Optimized: 66.8KB (89.4% reduction)
+2025-06-27 01:16:44,313 - INFO - Processing images/perx1.png (Original size: 671.8KB)
+2025-06-27 01:16:44,356 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,356 - INFO - Optimized: 57.1KB (91.5% reduction)
+2025-06-27 01:16:44,356 - INFO - Processing images/t_perx.png (Original size: 1137.0KB)
+2025-06-27 01:16:44,443 - INFO - Resized to 450x600
+2025-06-27 01:16:44,451 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,452 - INFO - Optimized: 34.4KB (97.0% reduction)
+2025-06-27 01:16:44,452 - INFO - Processing images/changiar4.png (Original size: 200.4KB)
+2025-06-27 01:16:44,677 - INFO - Optimized: 156.1KB (22.1% reduction)
+2025-06-27 01:16:44,678 - INFO - Processing images/changiem12.png (Original size: 504.5KB)
+2025-06-27 01:16:44,724 - INFO - Converted PNG to JPG
+2025-06-27 01:16:44,725 - INFO - Optimized: 49.3KB (90.2% reduction)
+2025-06-27 01:16:44,725 - INFO - Processing images/aisg8.png (Original size: 259.0KB)
+2025-06-27 01:16:45,032 - INFO - Optimized: 211.8KB (18.2% reduction)
+2025-06-27 01:16:45,032 - INFO - Processing images/changiem10.png (Original size: 770.8KB)
+2025-06-27 01:16:45,076 - INFO - Converted PNG to JPG
+2025-06-27 01:16:45,077 - INFO - Optimized: 86.8KB (88.7% reduction)
+2025-06-27 01:16:45,077 - INFO - Processing images/perx2.png (Original size: 6.9KB)
+2025-06-27 01:16:45,087 - INFO - Optimized: 14.4KB (-109.6% reduction)
+2025-06-27 01:16:45,087 - INFO - Processing images/t_changi_ar.png (Original size: 624.3KB)
+2025-06-27 01:16:45,162 - INFO - Resized to 450x600
+2025-06-27 01:16:45,169 - INFO - Converted PNG to JPG
+2025-06-27 01:16:45,170 - INFO - Optimized: 29.8KB (95.2% reduction)
+2025-06-27 01:16:45,171 - INFO - Processing images/changiar7.png (Original size: 338.8KB)
+2025-06-27 01:16:45,519 - INFO - Optimized: 300.3KB (11.4% reduction)
+2025-06-27 01:16:45,520 - INFO - Processing images/perx3.png (Original size: 196.8KB)
+2025-06-27 01:16:45,625 - INFO - Optimized: 186.1KB (5.4% reduction)
+2025-06-27 01:16:45,626 - INFO - Processing images/changiem11.png (Original size: 501.0KB)
+2025-06-27 01:16:45,664 - INFO - Converted PNG to JPG
+2025-06-27 01:16:45,665 - INFO - Optimized: 54.9KB (89.0% reduction)
+2025-06-27 01:16:45,665 - INFO - Processing images/aisg9.png (Original size: 191.2KB)
+2025-06-27 01:16:45,992 - INFO - Optimized: 142.2KB (25.6% reduction)
+2025-06-27 01:16:45,993 - INFO - Processing images/changiar8.jpg (Original size: 167.1KB)
+2025-06-27 01:16:46,039 - INFO - Optimized: 81.3KB (51.3% reduction)
+2025-06-27 01:16:46,040 - INFO - Processing images/vrclick4.jpg (Original size: 303.5KB)
+2025-06-27 01:16:46,087 - INFO - Optimized: 125.2KB (58.8% reduction)
+2025-06-27 01:16:46,088 - INFO - Processing images/vrclick5.jpg (Original size: 165.9KB)
+2025-06-27 01:16:46,126 - INFO - Optimized: 61.9KB (62.7% reduction)
+2025-06-27 01:16:46,127 - INFO - Processing images/vrclick3.jpg (Original size: 177.0KB)
+2025-06-27 01:16:46,162 - INFO - Optimized: 50.1KB (71.7% reduction)
+2025-06-27 01:16:46,163 - INFO - Processing images/wine1.jpg (Original size: 298.2KB)
+2025-06-27 01:16:46,207 - INFO - Optimized: 123.5KB (58.6% reduction)
+2025-06-27 01:16:46,208 - INFO - Processing images/wine5.jpg (Original size: 259.6KB)
+2025-06-27 01:16:46,257 - INFO - Optimized: 158.8KB (38.8% reduction)
+2025-06-27 01:16:46,258 - INFO - Processing images/wine4.jpg (Original size: 396.3KB)
+2025-06-27 01:16:46,336 - INFO - Optimized: 211.9KB (46.5% reduction)
+2025-06-27 01:16:46,337 - INFO - Processing images/vrperi1.jpg (Original size: 102.5KB)
+2025-06-27 01:16:46,369 - INFO - Optimized: 48.3KB (52.9% reduction)
+2025-06-27 01:16:46,369 - INFO - Processing images/vrperi3.jpg (Original size: 119.9KB)
+2025-06-27 01:16:46,401 - INFO - Optimized: 44.3KB (63.0% reduction)
+2025-06-27 01:16:46,402 - INFO - Processing images/vrperi6.jpg (Original size: 104.9KB)
+2025-06-27 01:16:46,426 - INFO - Optimized: 47.9KB (54.4% reduction)
+2025-06-27 01:16:46,427 - INFO - Processing images/vrperi5.jpg (Original size: 151.1KB)
+2025-06-27 01:16:46,456 - INFO - Optimized: 59.8KB (60.4% reduction)
+2025-06-27 01:16:46,457 - INFO - Processing images/vrperi4.jpeg (Original size: 105.9KB)
+2025-06-27 01:16:46,489 - INFO - Optimized: 66.8KB (36.9% reduction)
+2025-06-27 01:16:46,489 - INFO - Processing images/changiar5.gif (Original size: 1552.8KB)
+2025-06-27 01:16:46,646 - INFO - Optimized: 63.8KB (95.9% reduction)
+2025-06-27 01:16:46,646 - INFO - Processing images/changiar6.gif (Original size: 1439.2KB)
+2025-06-27 01:16:46,795 - INFO - Optimized: 64.6KB (95.5% reduction)
+2025-06-27 01:16:46,801 - WARNING - FFmpeg not found. Skipping video optimization for images/changiemV.mp4
+2025-06-27 01:16:46,801 - INFO - To install ffmpeg: brew install ffmpeg (on macOS) or apt install ffmpeg (on Ubuntu)
+2025-06-27 01:16:46,845 - INFO - Replacing original files with optimized versions...
+2025-06-27 01:16:46,989 - INFO - Replaced images/aisg4.png
+2025-06-27 01:16:46,991 - INFO - Updated references in index.html
+2025-06-27 01:16:47,007 - INFO - Replaced images/t_boots.png
+2025-06-27 01:16:47,010 - INFO - Updated references in proj_aisg.html
+2025-06-27 01:16:47,127 - INFO - Replaced images/aisg14.png
+2025-06-27 01:16:47,243 - INFO - Replaced images/aisg5.png
+2025-06-27 01:16:47,264 - INFO - Replaced images/aisg7.png
+2025-06-27 01:16:47,289 - INFO - Replaced images/t_aisg.png
+2025-06-27 01:16:47,318 - INFO - Replaced images/aisg6.png
+2025-06-27 01:16:47,340 - INFO - Replaced images/aisg2.png
+2025-06-27 01:16:47,367 - INFO - Replaced images/perx8.png
+2025-06-27 01:16:47,384 - INFO - Replaced images/aisg13.png
+2025-06-27 01:16:47,400 - INFO - Replaced images/aisg12.png
+2025-06-27 01:16:47,425 - INFO - Replaced images/perx9.png
+2025-06-27 01:16:47,454 - INFO - Replaced images/aisg3.png
+2025-06-27 01:16:47,466 - INFO - Replaced images/aisg1.png
+2025-06-27 01:16:47,495 - INFO - Replaced images/aisg10.png
+2025-06-27 01:16:47,525 - INFO - Replaced images/aisg11.png
+2025-06-27 01:16:47,547 - INFO - Replaced images/changiem9.png
+2025-06-27 01:16:47,548 - INFO - Updated references in proj_vr_click.html
+2025-06-27 01:16:47,576 - INFO - Replaced images/vrclick2.png
+2025-06-27 01:16:47,578 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:47,592 - INFO - Replaced images/changiem8.png
+2025-06-27 01:16:47,593 - INFO - Updated references in index.html
+2025-06-27 01:16:47,594 - INFO - Updated references in proj_vr_click.html
+2025-06-27 01:16:47,614 - INFO - Replaced images/vrclick1.png
+2025-06-27 01:16:47,631 - INFO - Replaced images/perx10.png
+2025-06-27 01:16:47,632 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:47,673 - INFO - Replaced images/changiem6.png
+2025-06-27 01:16:47,742 - INFO - Replaced images/boots3.png
+2025-06-27 01:16:47,763 - INFO - Replaced images/boots2.png
+2025-06-27 01:16:47,764 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:47,785 - INFO - Replaced images/changiem7.png
+2025-06-27 01:16:47,825 - INFO - Replaced images/perx11.png
+2025-06-27 01:16:47,858 - INFO - Replaced images/changiem5.png
+2025-06-27 01:16:47,861 - INFO - Updated references in proj_wine.html
+2025-06-27 01:16:47,888 - INFO - Replaced images/wine3.png
+2025-06-27 01:16:47,890 - INFO - Updated references in proj_wine.html
+2025-06-27 01:16:47,901 - INFO - Replaced images/wine2.png
+2025-06-27 01:16:47,933 - INFO - Replaced images/boots1.png
+2025-06-27 01:16:47,950 - INFO - Replaced images/changiem4.png
+2025-06-27 01:16:47,951 - INFO - Updated references in index.html
+2025-06-27 01:16:47,955 - INFO - Replaced images/t_vr_click.png
+2025-06-27 01:16:47,955 - INFO - Updated references in index.html
+2025-06-27 01:16:47,957 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:47,990 - INFO - Replaced images/changiem1.png
+2025-06-27 01:16:48,009 - INFO - Replaced images/changiem3.png
+2025-06-27 01:16:48,011 - INFO - Updated references in index.html
+2025-06-27 01:16:48,052 - INFO - Replaced images/t_wine.png
+2025-06-27 01:16:48,077 - INFO - Replaced images/changiem2.png
+2025-06-27 01:16:48,103 - INFO - Replaced images/perx7.png
+2025-06-27 01:16:48,104 - INFO - Updated references in index.html
+2025-06-27 01:16:48,148 - INFO - Replaced images/t_changi_emer.png
+2025-06-27 01:16:48,158 - INFO - Replaced images/changiar3.png
+2025-06-27 01:16:48,161 - INFO - Updated references in proj_changi_ar.html
+2025-06-27 01:16:48,186 - INFO - Replaced images/changiar2.png
+2025-06-27 01:16:48,187 - INFO - Updated references in index.html
+2025-06-27 01:16:48,209 - INFO - Replaced images/t_vr_saber.png
+2025-06-27 01:16:48,242 - INFO - Replaced images/perx6.png
+2025-06-27 01:16:48,244 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:48,261 - INFO - Replaced images/changiem14.png
+2025-06-27 01:16:48,267 - INFO - Replaced images/perx4.png
+2025-06-27 01:16:48,272 - INFO - Updated references in index.html
+2025-06-27 01:16:48,276 - INFO - Updated references in proj_changi_ar.html
+2025-06-27 01:16:48,308 - INFO - Replaced images/changiar1.png
+2025-06-27 01:16:48,335 - INFO - Replaced images/perx5.png
+2025-06-27 01:16:48,339 - INFO - Updated references in proj_vr_peri.html
+2025-06-27 01:16:48,378 - INFO - Replaced images/vrperi2.png
+2025-06-27 01:16:48,379 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:48,415 - INFO - Replaced images/changiem13.png
+2025-06-27 01:16:48,417 - INFO - Updated references in index.html
+2025-06-27 01:16:48,418 - INFO - Updated references in proj_perx.html
+2025-06-27 01:16:48,423 - INFO - Replaced images/perx1.png
+2025-06-27 01:16:48,424 - INFO - Updated references in index.html
+2025-06-27 01:16:48,448 - INFO - Replaced images/t_perx.png
+2025-06-27 01:16:48,483 - INFO - Replaced images/changiar4.png
+2025-06-27 01:16:48,485 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:48,500 - INFO - Replaced images/changiem12.png
+2025-06-27 01:16:48,536 - INFO - Replaced images/aisg8.png
+2025-06-27 01:16:48,537 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:48,578 - INFO - Replaced images/changiem10.png
+2025-06-27 01:16:48,594 - INFO - Replaced images/perx2.png
+2025-06-27 01:16:48,595 - INFO - Updated references in index.html
+2025-06-27 01:16:48,610 - INFO - Replaced images/t_changi_ar.png
+2025-06-27 01:16:48,612 - INFO - Replaced images/changiar7.png
+2025-06-27 01:16:48,653 - INFO - Replaced images/perx3.png
+2025-06-27 01:16:48,654 - INFO - Updated references in proj_changi_emer.html
+2025-06-27 01:16:48,679 - INFO - Replaced images/changiem11.png
+2025-06-27 01:16:48,688 - INFO - Replaced images/aisg9.png
+2025-06-27 01:16:48,718 - INFO - Replaced images/changiar8.jpg
+2025-06-27 01:16:48,745 - INFO - Replaced images/vrclick4.jpg
+2025-06-27 01:16:48,761 - INFO - Replaced images/vrclick5.jpg
+2025-06-27 01:16:48,768 - INFO - Replaced images/vrclick3.jpg
+2025-06-27 01:16:48,798 - INFO - Replaced images/wine1.jpg
+2025-06-27 01:16:48,807 - INFO - Replaced images/wine5.jpg
+2025-06-27 01:16:48,828 - INFO - Replaced images/wine4.jpg
+2025-06-27 01:16:48,866 - INFO - Replaced images/vrperi1.jpg
+2025-06-27 01:16:48,869 - INFO - Replaced images/vrperi3.jpg
+2025-06-27 01:16:48,912 - INFO - Replaced images/vrperi6.jpg
+2025-06-27 01:16:48,915 - INFO - Replaced images/vrperi5.jpg
+2025-06-27 01:16:48,957 - INFO - Replaced images/vrperi4.jpeg
+2025-06-27 01:16:48,986 - INFO - Replaced images/changiar5.gif
+2025-06-27 01:16:49,010 - INFO - Replaced images/changiar6.gif
+2025-06-27 01:16:49,016 - INFO - Replaced images/changiemV.mp4
+2025-06-27 01:16:49,017 - INFO - 
+==================================================
+2025-06-27 01:16:49,017 - INFO - OPTIMIZATION SUMMARY
+2025-06-27 01:16:49,018 - INFO - ==================================================
+2025-06-27 01:16:49,018 - INFO - Files processed: 75
+2025-06-27 01:16:49,018 - INFO - Original total size: 81.5MB
+2025-06-27 01:16:49,018 - INFO - Optimized total size: 56.3MB
+2025-06-27 01:16:49,018 - INFO - Total reduction: 31.0%
+2025-06-27 01:16:49,018 - INFO - Space saved: 25.3MB
