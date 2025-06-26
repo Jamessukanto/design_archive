@@ -2798,7 +2798,8 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					flex: 0 0 100%;
+					flex: 0 0 100% !important;
+					width: 100% !important;
 				}
 
 					.tiles article:hover > .image {
@@ -2810,18 +2811,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
 
-			.tiles {
-				margin: 0;
-			}
-
-				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
-				}
-
-		}
 
 /* Header */
 
