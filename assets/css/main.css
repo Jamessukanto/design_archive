@@ -3189,35 +3189,35 @@ input, select, textarea {
 	}
 
 	.project-header.perx {
-		background-image: url('../images/perx1.png');
+		background-image: url('../../images/perx1.png');
 	}
 
 	.project-header.boots {
-		background-image: url('../images/boots1.png');
+		background-image: url('../../images/boots1.png');
 	}
 
 	.project-header.changi-emergency {
-		background-image: url('../images/changiem1.png');
+		background-image: url('../../images/changiem1.png');
 	}
 
 	.project-header.changi-ar {
-		background-image: url('../images/changiar1.png');
+		background-image: url('../../images/changiar1.png');
 	}
 
 	.project-header.vr-click {
-		background-image: url('../images/vrclick1.png');
+		background-image: url('../../images/vrclick1.png');
 	}
 
 	.project-header.vr-peri {
-		background-image: url('../images/vrperi1.jpg');
+		background-image: url('../../images/vrperi1.jpg');
 	}
 
 	.project-header.wine {
-		background-image: url('../images/wine1.jpg');
+		background-image: url('../../images/wine1.jpg');
 	}
 
 	.project-header.aisg {
-		background-image: url('../images/aisg1.png');
+		background-image: url('../../images/aisg1.png');
 	}
 
 	@media screen and (max-width: 980px) {
