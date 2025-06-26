@@ -5,7 +5,6 @@
 		<title>James Sukanto Design Archive</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<base href="/design_archive/">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -38,13 +37,6 @@
 									<a href="https://www.linkedin.com/in/jamessukanto/" style="color: rgb(153, 153, 153); text-decoration: underline; font-weight: bold;">LinkedIn</a> &nbsp; <a href="https://www.github.com/jamessukanto/" style="color: rgb(153, 153, 153); text-decoration: underline; font-weight: bold;">GitHub</a>
 									<br><br>📧 &nbsp; <a href="#" onclick="copyEmail()" style="color: rgb(114, 153, 253); text-decoration: underline;">jamessukanto@gmail.com</a>
 								</p>
-								<script>
-									function copyEmail() {
-										navigator.clipboard.writeText('jamessukanto@gmail.com')
-											.then(() => alert('Email copied!'))
-											.catch((err) => alert('Failed to copy email'));
-									}
-								</script>
 							</header>
 
 							<h2 class="subheadline">Screen Interfaces</h2> 
@@ -104,13 +96,13 @@
 			</div>
 
 		<!-- Scripts -->
-
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/config.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/shared.js"></script>
 
 	</body>
 </html>

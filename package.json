@@ -1,0 +1,28 @@
+{
+  "name": "design-archive",
+  "version": "1.0.0",
+  "description": "James Sukanto's Design Portfolio Archive",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080",
+    "build": "echo 'Static site - deploys automatically via GitHub Pages'",
+    "validate": "echo 'HTML validation for GitHub Pages'",
+    "deploy": "git push origin main",
+    "preview": "echo 'Preview: https://jamessukanto.github.io/design_archive'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamessukanto/design_archive"
+  },
+  "keywords": [
+    "portfolio",
+    "design",
+    "ux",
+    "ui",
+    "static-site"
+  ],
+  "author": "James Sukanto <jamessukanto@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://jamessukanto.github.io/design_archive"
+} 

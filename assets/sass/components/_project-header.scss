@@ -1,0 +1,57 @@
+///
+/// Project Header Component
+/// Handles project page header backgrounds
+///
+
+/* Project Header */
+
+.project-header {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+
+	// Individual project backgrounds
+	&.perx {
+		background-image: url('../images/perx1.png');
+	}
+
+	&.boots {
+		background-image: url('../images/boots1.png');
+	}
+
+	&.changi-emergency {
+		background-image: url('../images/changiem1.png');
+	}
+
+	&.changi-ar {
+		background-image: url('../images/changiar1.png');
+	}
+
+	&.vr-click {
+		background-image: url('../images/vrclick1.png');
+	}
+
+	&.vr-peri {
+		background-image: url('../images/vrperi1.jpg');
+	}
+
+	&.wine {
+		background-image: url('../images/wine1.jpg');
+	}
+
+	&.aisg {
+		background-image: url('../images/aisg1.png');
+	}
+
+	// Responsive adjustments
+	@include breakpoint('<=medium') {
+		height: 50vh;
+	}
+
+	@include breakpoint('<=small') {
+		height: 40vh;
+	}
+} 
