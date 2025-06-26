@@ -53,6 +53,35 @@ const SiteUtils = {
 			clearTimeout(timeout);
 			timeout = setTimeout(later, wait);
 		};
+	},
+
+	// Add floating home button to project pages
+	addFloatingHomeButton() {
+		// Only add to project pages (those containing "proj_" in URL)
+		if (!window.location.pathname.includes('proj_')) {
+			return;
+		}
+
+		// Check if button already exists
+		if (document.querySelector('.back-btn')) {
+			return;
+		}
+
+		// Create the floating home button
+		const homeButton = document.createElement('a');
+		homeButton.href = 'index.html';
+		homeButton.className = 'back-btn';
+		homeButton.innerHTML = '← Home';
+		homeButton.setAttribute('aria-label', 'Go back to home page');
+
+		// Add to the page
+		document.body.appendChild(homeButton);
+
+		// Add smooth scroll behavior if needed
+		homeButton.addEventListener('click', function(e) {
+			// Let the default navigation behavior work
+			// Could add custom transition here if needed
+		});
 	}
 };
 
@@ -61,21 +90,26 @@ function copyEmail() {
 	SiteUtils.copyEmail();
 }
 
-// Initialize site utilities when DOM is loaded
+// Initialize site utilities when DOM is ready
+function initSiteUtils() {
+	// Add floating home button on project pages
+	SiteUtils.addFloatingHomeButton();
+
+	// Initialize image error handling
+	const images = document.querySelectorAll('img');
+	images.forEach(img => SiteUtils.loadImage(img));
+
+	console.log('Site utilities initialized');
+}
+
+// Auto-initialize when DOM is loaded
 if (document.readyState === 'loading') {
 	document.addEventListener('DOMContentLoaded', initSiteUtils);
 } else {
+	// DOM already loaded
 	initSiteUtils();
 }
 
-function initSiteUtils() {
-	// Initialize image error handling for all images
-	document.querySelectorAll('img').forEach(img => {
-		SiteUtils.loadImage(img);
-	});
-}
-
-// Make utilities globally available
-if (typeof window !== 'undefined') {
-	window.SiteUtils = SiteUtils;
-} 
+// Expose globally for manual calls if needed
+window.SiteUtils = SiteUtils;
+window.initSiteUtils = initSiteUtils; 

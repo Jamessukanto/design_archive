@@ -3384,8 +3384,46 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper > * > .inner {
-		width: 100%;
-		max-width: 68em;
-		margin: 0 auto;
-		padding: 0 2.5em;
-	}
+	width: 100%;
+	max-width: 68em;
+	margin: 0 auto;
+	padding: 0 2.5em;
+}
+
+/* Custom Overrides - Added for functionality updates */
+
+/* Hide the menu button and off-canvas menu */
+#header nav ul li a[href="#menu"], 
+#menu {
+	display: none !important;
+}
+
+/* Floating back button for project pages */
+.back-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background: rgb(69, 122, 255);
+	color: #ffffff;
+	padding: 12px 20px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+	box-shadow: 0 4px 15px rgba(69, 122, 255, 0.3);
+	transition: all 0.3s ease;
+	z-index: 1000;
+	border: none;
+	cursor: pointer;
+}
+
+.back-btn:hover {
+	background: rgb(89, 142, 255);
+	box-shadow: 0 6px 20px rgba(69, 122, 255, 0.4);
+	transform: translateY(-2px);
+	color: #ffffff;
+}
+
+.back-btn:active {
+	transform: translateY(0);
+}

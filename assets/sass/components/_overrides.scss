@@ -1,0 +1,33 @@
+/* Custom overrides to hide menu and add floating back button */
+
+// Hide the hamburger menu link in header and the entire off-canvas menu.
+#header nav ul li a[href="#menu"],
+#menu {
+  display: none !important;
+}
+
+// Hide any About links in nav lists.
+nav ul li a[href="about.html"] {
+  display: none !important;
+}
+
+// Floating back button (shown via JS on project pages)
+.back-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: rgba(69, 122, 255, 0.9);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 10000;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgb(69, 122, 255);
+  }
+} 
