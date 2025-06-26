@@ -81,6 +81,25 @@ const SiteUtils = {
 		};
 	},
 
+	// Detect mobile devices
+	isMobileDevice() {
+		// Check multiple indicators for mobile devices
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isMobileUserAgent = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+		
+		// Check for touch support
+		const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+		
+		// Check screen size (mobile-like dimensions)
+		const isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 768;
+		
+		// Check CSS media query support
+		const isMobileMediaQuery = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+		
+		// Consider it mobile if multiple indicators suggest so
+		return isMobileUserAgent || (isTouchDevice && (isSmallScreen || isMobileMediaQuery));
+	},
+
 	// Add floating home button to project pages
 	addFloatingHomeButton() {
 		// Only add to project pages (those containing "proj_" in URL)
@@ -157,6 +176,12 @@ const SiteUtils = {
 		// Only run on homepage
 		if (!window.location.pathname.endsWith('index.html') && 
 			!window.location.pathname.endsWith('/')) {
+			return;
+		}
+
+		// Skip preview functionality on mobile devices to improve performance
+		if (this.isMobileDevice()) {
+			console.log('Mobile device detected: skipping project previews for better performance');
 			return;
 		}
 

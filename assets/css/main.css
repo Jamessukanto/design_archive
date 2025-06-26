@@ -2806,6 +2806,140 @@ input, select, textarea {
 
 		}
 
+		/* Completely disable hover effects on devices that don't support hover */
+		@media (hover: none) {
+			.tiles article > .image {
+				transform: none !important;
+				transition: none !important;
+			}
+
+			.tiles article > .image:before {
+				transition: none !important;
+			}
+
+			.tiles article > .image:after {
+				transition: none !important;
+			}
+
+			.tiles article > a .content {
+				transition: none !important;
+			}
+
+			/* Disable all hover-specific transforms and transitions */
+			.tiles article:hover > .image {
+				transform: none !important;
+			}
+
+			.tiles article:hover > .image:before {
+				background-color: transparent !important;
+				opacity: 0.8 !important;
+			}
+
+			.tiles article:hover > .image:after {
+				opacity: 0.25 !important;
+			}
+
+			.tiles article:hover .content {
+				max-height: 0 !important;
+				opacity: 0 !important;
+			}
+		}
+
+		/* Additional safety for touch-only devices */
+		@media (pointer: coarse) {
+			.tiles article > .image {
+				transform: none !important;
+				transition: none !important;
+			}
+		}
+
+		/* Force disable hover effects on body.is-touch class */
+		body.is-touch .tiles article > a:hover {
+			color: inherit !important;
+		}
+
+		body.is-touch .tiles article:hover > .image {
+			transform: none !important;
+		}
+
+		body.is-touch .tiles article:hover > .image:before {
+			background-color: transparent !important;
+			opacity: 0.8 !important;
+		}
+
+		body.is-touch .tiles article:hover > .image:after {
+			opacity: 0.25 !important;
+		}
+
+		body.is-touch .tiles article:hover .content {
+			max-height: 0 !important;
+			opacity: 0 !important;
+		}
+
+/* Global hover effect disabling for mobile devices */
+@media (hover: none), (pointer: coarse), (max-width: 768px) {
+	/* Disable ALL tiles hover effects completely */
+	.tiles article > a:hover {
+		color: inherit !important;
+	}
+
+	.tiles article:hover > .image {
+		transform: none !important;
+	}
+
+	.tiles article:hover > .image:before {
+		background-color: transparent !important;
+		opacity: 0.8 !important;
+	}
+
+	.tiles article:hover > .image:after {
+		opacity: 0.25 !important;
+	}
+
+	.tiles article:hover .content {
+		max-height: 0 !important;
+		opacity: 0 !important;
+	}
+
+	/* Disable all link hover effects */
+	a:hover {
+		border-bottom-color: dotted 1px rgba(88, 88, 88, 0.5) !important;
+		color: #585858 !important;
+	}
+
+	/* Disable button hover effects */
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover,
+	button:hover,
+	.button:hover {
+		color: inherit !important;
+		box-shadow: none !important;
+	}
+
+	input[type="submit"].primary:hover,
+	input[type="reset"].primary:hover,
+	input[type="button"].primary:hover,
+	button.primary:hover,
+	.button.primary:hover {
+		background-color: #585858 !important;
+	}
+
+	/* Disable icon hover effects */
+	.icon.style2:hover {
+		color: inherit !important;
+	}
+
+	/* Keep CTA buttons functional but remove transitions for performance */
+	.cta-button-inline:hover {
+		transition: none !important;
+	}
+
+	.back-btn:hover {
+		transition: none !important;
+	}
+}
+
 
 
 
