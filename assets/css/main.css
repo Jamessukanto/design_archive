@@ -2830,14 +2830,7 @@ input, select, textarea {
 
 		}
 
-		/* Maintain consistent container padding for single-column layout */
-		@media screen and (min-width: 737px) and (max-width: 1200px) {
 
-			#wrapper > * > .inner {
-				padding: 0 2.5em !important;
-			}
-
-		}
 
 
 
@@ -3342,7 +3335,7 @@ input, select, textarea {
 		padding: 0 2.5em;
 	}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
