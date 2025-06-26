@@ -2791,31 +2791,7 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		@media screen and (max-width: 1280px) {
-
-			.tiles {
-				gap: 1.5em;
-			}
-
-				.tiles article {
-					flex: 0 0 calc(33.33333% - 1em);
-				}
-
-		}
-
 		@media screen and (max-width: 980px) {
-
-			.tiles {
-				gap: 2em;
-			}
-
-				.tiles article {
-					flex: 0 0 calc(50% - 1em);
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
 
 			.tiles {
 				gap: 1.5em;
