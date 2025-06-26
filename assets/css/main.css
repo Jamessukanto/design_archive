@@ -2594,8 +2594,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		position: relative;
-		margin: 0;
-		gap: 2em;
+		margin: -2.5em 0 0 -2.5em;
 	}
 
 		.tiles article {
@@ -2604,7 +2603,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			flex: 0 0 calc(50% - 1em);
+			width: calc(50% - 2.5em);
+			margin: 2.5em 0 0 2.5em;
 		}
 
 		
@@ -2794,12 +2794,12 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.tiles {
-				gap: 1.5em;
+				margin: 0;
 			}
 
 				.tiles article {
-					flex: 0 0 100% !important;
-					width: 100% !important;
+					width: 100%;
+					margin: 1.25em 0 0 0;
 				}
 
 					.tiles article:hover > .image {

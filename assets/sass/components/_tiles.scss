@@ -217,24 +217,13 @@
 		}
 
 		@include breakpoint('<=medium') {
-			$gutter: _size(gutter);
-
-			margin: ($gutter * -1) 0 0 ($gutter * -1);
-
-			article {
-				width: calc(#{(100% / 2)} - #{$gutter * 1});
-				margin: $gutter 0 0 $gutter;
-			}
-		}
-
-		@include breakpoint('<=small') {
 			$gutter: _size(gutter) * 0.5;
 
-			margin: ($gutter * -1) 0 0 ($gutter * -1);
+			margin: 0;
 
 			article {
-				width: calc(#{(100% / 2)} - #{$gutter * 1});
-				margin: $gutter 0 0 $gutter;
+				width: 100%;
+				margin: $gutter 0 0 0;
 
 				&:hover {
 					> .image {
