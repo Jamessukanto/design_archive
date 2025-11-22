@@ -7,19 +7,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			:root {
+				--hover-color: rgb(78, 200, 237);
+			}
+			
 			/* Custom hover colors for links and buttons */
 			a[href*="linkedin.com"]:hover {
-				color: cyan !important;
-				text-decoration-color: cyan !important;
+				color: var(--hover-color) !important;
+				text-decoration-color: var(--hover-color) !important;
 			}
 			
 			a[href*="github.com"]:hover {
-				color: cyan !important;
-				text-decoration-color: cyan !important;
+				color: var(--hover-color) !important;
+				text-decoration-color: var(--hover-color) !important;
+			}
+			
+			a[href*="abe-annotator.vercel.app"]:hover {
+				color: var(--hover-color) !important;
+				text-decoration-color: var(--hover-color) !important;
 			}
 			
 			.cta-button-inline:hover {
-				background-color: cyan !important;
+				background-color: var(--hover-color) !important;
 				color: white !important;
 			}
 		</style>
@@ -52,30 +61,56 @@
 									</a> 🕵🏻‍♂️
 								</h1> 
 								<p>
-									A curious designer building with pixels and code. These days, I design UI/UX, 
-									develop a web app in progress, and build agentic systems with LLMs. 
-									Each design choice is a nudge to simplify decision making.
+									A curious UI/UX designer building with pixels and code. 
+									Currently designing and developing 							
+									<a href="https://abe-annotator.vercel.app/" 
+									   style="color: rgb(114, 153, 253); text-decoration: underline;"
+									   target="_blank"
+									>
+									Abe</a>, a schema editor for document-image annotation. 
 									
-									<br>Tools: Figma, LangGraph, PyTorch, Django, React.
-									
+									<br><br>
+									Tools: Figma, Typescript, React, NextJS, Python, PyTorch, Django, LangGraph.
+									<br>
+									Code:
+									<a href="https://www.github.com/jamessukanto/" 
+									   style="color: rgb(114, 153, 253); text-decoration: underline;"
+									   target="_blank"
+									>
+										GitHub
+									</a>
+									<br><br>
+									Each design choice is a nudge to simplify decision making.									
 									<br><br>
 									<a href="mailto:jamessukanto@gmail.com" class="cta-button-inline">
 										Get in touch
 									</a>
 									<br><br>
-									
-									This portfolio's an older archive, mostly UI/UX. For recent work, check
-									<a href="https://www.github.com/jamessukanto/" 
-									   style="color: rgb(114, 153, 253); text-decoration: underline;"
-									   target="_blank">
-										GitHub
-									</a>
-									<br>
 								</p>
 							</header>
 
-							<h2 class="subheadline">Screen Interfaces</h2> 
+
+
+
+							<h2 class="subheadline">Current Work</h2> 
 							<section class="tiles">
+								<article class="style1" data-preview="abe1.png">
+									<span class="image">
+										<a href="https://abe-annotator.vercel.app/" target="_blank"><img src="images/t_abe.jpg" loading="lazy" alt="Abe project thumbnail"/></a>
+									</span>
+								</article>
+							</section>
+
+
+
+
+							<h2 class="subheadline">Screen</h2> 
+							<section class="tiles">
+								<article class="style3" data-preview="changiem11.jpg">
+									<span class="image">
+										<a href="proj_changi_emer.html"><img src="images/t_changi_emer.jpg" loading="lazy" alt="Changi Emergency project thumbnail"/></a>
+									</span>
+								</article>
 								<article class="style1" data-preview="perx1.jpg">
 									<span class="image">
 										<a href="proj_perx.html"><img src="images/t_perx.jpg" loading="lazy" alt="Perx project thumbnail"/></a>
@@ -84,11 +119,6 @@
 								<article class="style2" data-preview="boots1.png">
 									<span class="image">
 										<a href="proj_boots.html"><img src="images/t_boots.jpg" loading="lazy" alt="Boots project thumbnail"/></a>
-									</span>
-								</article>
-								<article class="style3" data-preview="changiem11.jpg">
-									<span class="image">
-										<a href="proj_changi_emer.html"><img src="images/t_changi_emer.jpg" loading="lazy" alt="Changi Emergency project thumbnail"/></a>
 									</span>
 								</article>
 								<article class="style4" data-preview="changiar3.png">
@@ -121,7 +151,7 @@
 								</article>
 								<article class="style6" data-preview="aisg1.png">
 									<span class="image">
-										<a href="proj_aisg.html"><img src="images/t_aisg.png" loading="lazy" alt="AI Singapore project thumbnail"/></a>
+										<a href="proj_aisg.html"><img src="images/t_aisg.jpg" loading="lazy" alt="AI Singapore project thumbnail"/></a>
 									</span>
 								</article>
 							</section>

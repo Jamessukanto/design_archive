@@ -7,6 +7,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			:root {
+				--hover-color: rgb(78, 200, 237);
+			}
+			
 			#header {
 				background-image: url('images/wine1.jpg');
 				background-size: cover;
@@ -19,13 +23,13 @@
 			/* Custom hover colors for buttons */
 			.floating-home-button:hover,
 			.back-btn:hover {
-				background-color: cyan !important;
-				background: cyan !important;
+				background-color: var(--hover-color) !important;
+				background: var(--hover-color) !important;
 				color: white !important;
 			}
 			
 			.cta-button-inline:hover {
-				background-color: cyan !important;
+				background-color: var(--hover-color) !important;
 				color: white !important;
 			}
 		</style>
