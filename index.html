@@ -31,6 +31,83 @@
 				background-color: var(--hover-color) !important;
 				color: white !important;
 			}
+			
+			/* Fix rounded corners for new thumbnails - ensure image respects container border-radius */
+			.tiles article[data-preview="abe1.png"] > .image,
+			.tiles article[data-preview="poke1.png"] > .image {
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.tiles article[data-preview="abe1.png"] > .image img,
+			.tiles article[data-preview="poke1.png"] > .image img {
+				border-radius: 32px;
+				display: block;
+				width: 100%;
+			}
+			
+			/* Enable header/subheader overlay for Abe and Do not poke thumbnails - positioned absolutely over image */
+			.tiles article[data-preview="abe1.png"] > .image > a,
+			.tiles article[data-preview="poke1.png"] > .image > a {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				position: absolute;
+				top: 0px;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 32px;
+				z-index: 3;
+				padding: 2.6em;
+			}
+			
+			/* Title styling - Georgia, bold, much bigger, left-aligned, reduced kerning */
+			.tiles article[data-preview="abe1.png"] > .image > a h2,
+			.tiles article[data-preview="poke1.png"] > .image > a h2 {
+				font-family: Georgia, serif;
+				font-weight: bold;
+				font-size: 2.4em;
+				margin: 0 0 0 0;
+				text-align: left;
+				letter-spacing: -0.035em;
+				line-height: 1.2;
+				text-transform: none;
+			}
+			
+			/* Subtitle styling - Arial, bigger, left-aligned */
+			.tiles article[data-preview="abe1.png"] > .image > a .content,
+			.tiles article[data-preview="poke1.png"] > .image > a .content {
+				font-family: Arial, sans-serif !important;
+				font-size: 1.16em !important;
+				max-height: 5em !important;
+				opacity: 1 !important;
+				text-align: left !important;
+			}
+			
+			/* Brighter but not full white color for Abe thumbnail */
+			.tiles article[data-preview="abe1.png"] > .image > a h2,
+			.tiles article[data-preview="abe1.png"] > .image > a .content {
+				color: #e8e8e8 !important;
+			}
+			
+			/* Black text for Do not poke thumbnail */
+			.tiles article[data-preview="poke1.png"] > .image > a h2,
+			.tiles article[data-preview="poke1.png"] > .image > a .content {
+				color: #000000 !important;
+			}
+			
+			/* Prevent color change on hover - maintain original colors */
+			.tiles article[data-preview="abe1.png"] > .image > a:hover h2,
+			.tiles article[data-preview="abe1.png"] > .image > a:hover .content {
+				color: #e8e8e8 !important;
+			}
+			
+			.tiles article[data-preview="poke1.png"] > .image > a:hover h2,
+			.tiles article[data-preview="poke1.png"] > .image > a:hover .content {
+				color: #000000 !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -89,23 +166,27 @@
 								</p>
 							</header>
 
+							<h2 class="subheadline">Screen</h2>
 
-
-
-							<h2 class="subheadline">Current Work</h2> 
 							<section class="tiles">
-								<article class="style1" data-preview="abe1.png">
+								<article class="style6" data-preview="poke1.png">
 									<span class="image">
-										<a href="https://abe-annotator.vercel.app/" target="_blank"><img src="images/t_abe.jpg" loading="lazy" alt="Abe project thumbnail"/></a>
+										<img src="images/t_poke.jpg?v=3" loading="lazy" alt="Do not poke project thumbnail"/>
+										<a href="https://jamessukanto.github.io/do-not-poke/" target="_blank">
+											<h2>Do Not Poke</h2>
+											<div class="content">Development • UI/UX</div>
+										</a>
 									</span>
 								</article>
-							</section>
-
-
-
-
-							<h2 class="subheadline">Screen</h2> 
-							<section class="tiles">
+								<article class="style5" data-preview="abe1.png">
+									<span class="image">
+										<img src="images/t_abe.jpg?v=4" loading="lazy" alt="Abe project thumbnail"/>
+										<a href="https://abe-annotator.vercel.app/" target="_blank">
+											<h2>Abe: Semantic-First Data Annotator</h2>
+											<div class="content">Development • UI/UX</div>
+										</a>
+									</span>
+								</article>
 								<article class="style1" data-preview="perx1.jpg">
 									<span class="image">
 										<a href="proj_perx.html"><img src="images/t_perx.jpg" loading="lazy" alt="Perx project thumbnail"/></a>
